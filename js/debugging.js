@@ -1,6 +1,6 @@
-$("#github").on("keyup", function() {
+$("#github").on("keyup", function(e) {
 
-  if (e.keyCode !== 13) return;
+  if (e.keyCode !== 13 /* RETURN */) return;
   
   var user = $("#github").val();
 
